@@ -1,0 +1,47 @@
+public class Car extends Auto {//файл Car.java
+    private String model;
+    private int numDoors;
+    private Boolean fullTime; //полный привод
+
+    public Car() {
+        super();// вызываем конструктор класса-родителя без параметров (см. класс Auto)
+        model = ""; // добавляем инициализацию новых членов
+        numDoors = 4;
+        fullTime = false;
+    }
+
+    public Car(String firma, int speed, String gosNomerInput, String name, int n, Boolean f) {
+        super(firma, speed, gosNomerInput); //вызываем конструктор класса - родителя с параметрами (см.класс Auto)
+        model = name; // добавляем инициализацию новых членов
+        numDoors = n;
+        fullTime = f;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String name) {
+        model = name;
+    }
+
+    public int getNumDoors() {
+        return numDoors;
+    }
+
+    public void setNumDoors(int n) {
+        numDoors = n;
+    }
+
+    public void setFullTime(Boolean b) {
+        fullTime = b;
+    }
+
+    public Boolean isFullTime() {
+        return fullTime;
+    }
+
+    public String toString() {
+        return getFirm() + " " + getMaxSpeed() + " " + getGosNomer() + " " + model + " " + numDoors + " " + fullTime;
+    }
+}
