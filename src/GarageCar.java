@@ -24,7 +24,7 @@ public class GarageCar {
 
     public void printGarage() { //для вывода на экран списка машин в гараже
         System.out.println("В гараже: ");
-        for (Auto a : masCar) { //
+        for (Auto a : masCar) {
             System.out.println("\t" + a.toString());
         }
     }
