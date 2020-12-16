@@ -6,7 +6,9 @@ public class testGarage {
         myGarage.addCar(new Car("LADA", 140, "c123cc14", "Kalina", 4, false));//добавляем еще одну машину
         Truck myTruck = new Truck("Dove", 160, "o555oo14", "DTS", 700, true);//создаем грузовик
         myGarage.addCar(myTruck); //добавляем его в гараж
-        myGarage.printGarage(); //выводи на экран содержимое гаража
+        myGarage.printGarage(); //выводим на экран содержимое гаража
+        myGarage.removeCar(myCar1); //удаляем машину из гаража
+        myGarage.printGarage(); //выводим на экран содержимое гаража
         if (myGarage.findCar(myCar1)) { //ищем машину
             System.out.println("Да");
         } else {
